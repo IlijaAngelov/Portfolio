@@ -11,6 +11,7 @@ b {
   background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGTFS64HiPPhZjoMyAcqzW3ay0sINlzR_jJsR0zv6ypAwF7CiD);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   margin: 0 10px 0 10px;
