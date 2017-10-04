@@ -1,12 +1,15 @@
 body {
-	background-color: grey !important;
+	
 }
 .nav {
 	height: 80px;
 	padding-top: 7px;
 }
+#main {
+
+}
 li {
-	background-color: #b642f4;
+	background-color: #41a9f4;
 }
 li a.active {
 	background-color: white;
@@ -17,7 +20,7 @@ li a:hover:not(active) {
 	box-shadow: 5px 5px 5px grey;
 }
 .about {
-	width: 60%;
+	width: 70%;
 	margin: 0px auto;
 	margin-top: 80px;
 	background-color: #7e7f82;
@@ -28,19 +31,49 @@ li a:hover:not(active) {
 	padding: 60px 20px 20px 20px;
 	text-align: center;
 }
-.profile_photo {
-	border-radius: 50%;
+.btn {
+	display: inline;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	text-decoration: none;
+	border: 2px solid #fff !important;
 }
-.Skills {
-	width: 60%;
-	min-height: 300px;
+.btn-outline {
+	font-size: 20px !important;
+	color: black;
+	background-color: #898f99;
+}
+
+.btn-outline:hover {
+	color: black;
+	background-color: white;
+}
+
+.profile_photo {
+	align-items: middle;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+#Skills {
+	width: 70%;
+	min-height: 500px;
 	margin: 0 auto;
 	text-align: center;
 	background-color: white;
-	padding: 20px;
+	padding: 50px 20px 20px 20px;
 }
-.contact {
-	width: 60%;
+#Projects {
+	width: 70%;
+	min-height: 500px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #41a9f4;
+	padding: 50px 20px 20px 20px;
+}
+#Contact {
+	width: 70%;
+	height: 450px;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
@@ -49,7 +82,7 @@ li a:hover:not(active) {
 	border-top: 1px solid grey;
 	min-height: 250px;
 }
-.contact div  {
+#Contact div  {
 	padding: 5px;
 }
 .no-border {
@@ -64,8 +97,11 @@ li a:hover:not(active) {
 	resize: none;
 	height: 80px;
 }
-.float-left {
+.btn-send {
 	float: left;
+}
+.btn-reset {
+	float: right;
 }
 .responsive-textarea {
 	width: 100%;
@@ -73,7 +109,32 @@ li a:hover:not(active) {
 .footer {
 	color: white;
 	width: 100%;
-	background-color: black;
+	background-color: #7e7f82;
 	text-align: center;
 	padding: 20px;
+}
+.inline {
+	display: inline-block;
+	line-height: 1em;
+}
+.pStyle {
+	padding: 10px;
+	margin: 20px;
+}
+.dStyle {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: 20px;
+}
+.btn-send-text {
+	display: none;
+	/*position: absolute;*/
+	margin: 5px auto;
+	padding: 3px;
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background-color: #aa2032;
+	border: 1px dotted #e9ff2b;
+	border-radius: 5px;
 }
