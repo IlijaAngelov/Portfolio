@@ -1,4 +1,12 @@
 <?php
+
+// from the form part of index, not sure which tut
+    // $mailSent = mail($to, $subject, $message, $headers);
+    
+    // $expected = ['name', 'email', 'comment'];
+    // $required = ['name', 'email', 'comment'];
+    // require('contact.php');
+
 // checkout and maybe try filtering senders email
 
 // assume nothing is suspect

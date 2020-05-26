@@ -4,16 +4,6 @@ html, body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ecf0f1;
 }
-.personal {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-image: url('assets/background3.gif');
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-    color: white;
-}
 #nav {
     background: none;
     color: white;
@@ -41,7 +31,6 @@ html, body {
     margin: 0;
 }
 .li {
-    /* border: 1px solid red; */
     flex: 0 0 auto;
     padding: 5vh;
     text-decoration: none;
@@ -51,18 +40,24 @@ html, body {
     margin-right: auto;
     margin-left: 5vh;
 }
+
+
+/*      Main page        */
+.personal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url('assets/background3.gif');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
 .flex-container {
     display: flex;
     flex: 1 1 auto;
     height: 80vh;
-}
-.home-side {
-    display: flex;
-    padding-top: 35vh; 
-    transform: rotate(-90deg);
-    text-transform: uppercase;
-    line-height: 2;
-    z-index: 0;
 }
 .about-info {
     display: flex;
@@ -70,7 +65,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     margin: 30vh auto;
-    height: 30vh;    
+    height: 30vh;
 }
 .line {
     border-bottom: solid 4px #2980b9;
@@ -83,13 +78,13 @@ html, body {
     text-transform: uppercase;
     line-height: 2;
 }
-#about {
+.about {
     display: flex;
     flex-direction: column;
     opacity: 0.8;
     font-size: 1.3em;
     padding-top: 5vh;
-    height: 80vh;
+    min-height: 80vh;
 }
 .about img {
     border-radius: 50%;
@@ -101,34 +96,30 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 50vh;
     margin: auto;
 }
-.more-about {
+.more-about-myself {
     display: flex;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 
 
-
-
-
-/* ////////////// PROJECTS */
+/*            PROJECTS */
 .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 15vh; 
     height: 70vh;
-    /* background-color: yellow; */
+    width: 70%;
+    margin: auto;
 }
-.asd {
+.projects-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin: auto;
+    justify-content: center;
 }
 .project {
     display: flex;
@@ -160,38 +151,41 @@ html, body {
 .project-links a:hover {
     background:#173b67;
 }
-/* END OF PROJECTS */
 
 
-/*            CONTACT          SECTION */
+/*              CONTACT  SECTION */
 .contact-section {
-    /* padding-top: 15vh;  */
+    padding-top: 15vh; 
+    align-content: center;
+    justify-content: center;
+    width: 70%;
     height: 70vh;
+    margin: auto;
+    padding-bottom: 10vh;
 }
-.contact1 {
+.contact-container {
     display: flex;
-    width: 80%;
-    padding-top: 5vh;
-    /* height: 200px; */
+    width: 100%;
+    height: 150px;
     margin: auto;
 }
-.contact1 > * {
+.contact-container > * {
     flex: 1;
-    /* min-width: 200px; */
 }
 
 .submit-info {
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 0 10px 10px;
-    width: 100%;
     font-size: 1.2em;
 }
 .message {
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 10px;
+    flex-basis: 100%;
 }
 textarea {
     width: 100%;
@@ -211,7 +205,7 @@ input:focus {
     display: flex;
     flex: 0 1 0;
     margin: auto;
-    width: 80%;
+    width: 100%;
     font-family: "Merriweather";
 }
 .button-send {
@@ -244,4 +238,101 @@ input:focus {
 .space-it {
     height: 30px;
     width: 30px;
+}
+
+.alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .menu-area a:nth-last-child(-n+3){
+        font-size: 15px;
+    }
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    } 
+    .about {
+        padding-top: 7vh;
+    }
+    .inside-personal-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 10vh auto;
+    }
+    .more-about-myself {
+        width: 70%;
+        font-size: 0.7em;
+    }
+    
+    .projects {
+        display: flex;
+        height: 650px;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        justify-content: center;
+    }    
+
+    .contact-section {
+        width: 90%;
+        height: 400px;
+        padding-top: 8vh;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .submit-info {
+        height: 90px;
+        margin: auto;
+        width: 90%;
+        flex-basis: 0%;
+        justify-content: center;
+        padding: 0px;
+    }
+    .message {
+        margin: auto;
+        width: 90%;
+        flex-basis: 0%;
+        padding: 0px;
+    }
+    textarea {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .myself {
+        min-height: 70vh;
+    }
+    .projects{
+        padding-top: 13vh;
+    }
+    
+@media only screen and (max-width: 767px) {
+    
+}
+@media only screen and (min-width: 1024px) {
+
+}
+@media only screen and (min-width: 1200px) {
+    
 }
