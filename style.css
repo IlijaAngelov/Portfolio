@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #ecf0f1;
+    scroll-behavior: smooth;
 }
 #nav {
     background: none;
@@ -32,7 +33,7 @@ html, body {
 }
 .li {
     flex: 0 0 auto;
-    padding: 5vh;
+    padding: 4vh 5vh;
     text-decoration: none;
     color: white;
 }
@@ -65,7 +66,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     margin: 30vh auto;
-    height: 30vh;
 }
 .line {
     border-bottom: solid 4px #2980b9;
@@ -82,9 +82,7 @@ html, body {
     display: flex;
     flex-direction: column;
     opacity: 0.8;
-    font-size: 1.3em;
-    padding-top: 5vh;
-    min-height: 80vh;
+    padding: 5vh 0;
 }
 .about img {
     border-radius: 50%;
@@ -111,10 +109,10 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 15vh; 
-    height: 70vh;
+    /* padding-top: 15vh;  */
     width: 70%;
     margin: auto;
+    padding: 5vh 0;
 }
 .projects-container {
     display: flex;
@@ -123,10 +121,9 @@ html, body {
 }
 .project {
     display: flex;
-    /* flex-direction: row; */
     flex: 1 1 33%;
     flex-direction: column;
-    margin: 2vh;
+    margin: 1vh;
     border: 2px solid teal;
 }
 .project-image { 
@@ -155,13 +152,12 @@ html, body {
 
 /*              CONTACT  SECTION */
 .contact-section {
-    padding-top: 15vh; 
+    /* padding-top: 15vh;  */
     align-content: center;
     justify-content: center;
     width: 70%;
-    height: 70vh;
     margin: auto;
-    padding-bottom: 10vh;
+    padding: 5vh 0 10vh 0;
 }
 .contact-container {
     display: flex;
@@ -252,32 +248,35 @@ input:focus {
     border-color: #eed3d7;
 }
 
+.menu-wrap {
+    visibility: hidden;
+}
+
+
 @media only screen and (max-width: 480px) {
-    
-    .menu-area a:nth-last-child(-n+3){
-        font-size: 15px;
-    }
+
     html, body {
         margin: 0px;
         padding: 0px;
     } 
-    .about {
-        padding-top: 7vh;
+
+    .menu-wrap {
+        visibility: visible;
     }
+
+    #nav {
+        visibility: hidden !important;
+    }
+
     .inside-personal-container {
         display: flex;
         justify-content: center;
         align-content: center;
         margin: 10vh auto;
     }
-    .more-about-myself {
-        width: 70%;
-        font-size: 0.7em;
-    }
     
     .projects {
         display: flex;
-        height: 650px;
     }
     .projects-container {
         display: flex;
@@ -287,9 +286,9 @@ input:focus {
     }    
 
     .contact-section {
-        width: 90%;
-        height: 400px;
-        padding-top: 8vh;
+        /* width: 90%; */
+        /* height: 400px; */
+        /* padding-top: 8vh; */
     }
     .contact-container {
         display: flex;
@@ -315,24 +314,13 @@ input:focus {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
-    .myself {
-        min-height: 70vh;
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .projects{
-        padding-top: 13vh;
-    }
-    
-@media only screen and (max-width: 767px) {
-    
-}
-@media only screen and (min-width: 1024px) {
-
-}
-@media only screen and (min-width: 1200px) {
-    
-}
