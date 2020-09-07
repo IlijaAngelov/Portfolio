@@ -81,13 +81,13 @@
                 <a href="https://codepen.io/ItoAngel/full/GRoMggB" target="_blank" rel="noreferrer">Live</a>
             </div>
         </div>
-        <div class="project">
+        <!-- <div class="project">
             <div class="project-image"><img src="/assets/tree.jpeg" style="width: 100%;"></div>
             <div class="project-links">
                 <a href="github.com" target="_blank" rel="noreferrer">Github</a>
                 <a href="google.com" target="_blank" rel="noreferrer">Live</a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
