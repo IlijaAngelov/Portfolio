@@ -5,6 +5,9 @@ use PHPMailer\PHPMailer\Exception;
 
 require_once "vendor/autoload.php";
 
+$date = new DateTime();
+$date->setTimeZone(new DateTimeZone('Europe/Skopje'));
+
 // error_reporting(E_ALL ^ E_NOTICE);
 if(isset($_POST['submit'])){ 
     $name = htmlspecialchars($_POST['name']);
@@ -44,7 +47,15 @@ if(isset($_POST['submit'])){
 
             try {
                 $mail->send();
-                    echo '<script type="text/javascript">toastr.success(\'Email sent successfully!\')</script>';
+                if($date->format(D) === 'Sat' || $date->format(D) === 'Sun') {
+                    echo '<script type="text/javascript">toastr.success(\'Email sent successfully! It is weekend! I will get back to you as soon as possible. \')</script>';
+                } else {
+                    if($date->format(H) >= 21 || $date->format(H) <= 9){
+                        echo '<script type="text/javascript">toastr.success(\'Email sent successfully! I might be sleeping! I will get back to you in few hours.\')</script>';
+                    } else {
+                        echo '<script type="text/javascript">toastr.success(\'Email sent successfully! I will get back at you shortly!\')</script>';
+                    }
+                }
                     $_POST = array();
             } catch(Exception $e) {
                 echo "Mailer Error:" . $mail->ErrorInfo;
