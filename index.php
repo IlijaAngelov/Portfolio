@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,35 +49,52 @@
                 <h1 class="uppercase">ilija angelov</h1>
                 <div class="line"></div>
                 <h2 class="uppercase">web developer</h2>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/ilija-angelov-22472413b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in space-it" style="color:white" ></i></a>
+                    <a href="https://github.com/IlijaAngelov" target="_blank" rel="noreferrer"><i class="fab fa-github space-it" style="color:white"></i></a>
+                    <a href="http://ilija.atrajkov.com/resume.pdf" target="_blank" rel="noreferrer"><i class="far fa-file-alt space-it" style="color:white"></i></a>
+                </div>
             </div>
+
     </div>
 </div>
-<div id="about" class="about">    
-    <div class="myself">
-        <h1>About me</h1>
-        <img src="/assets/me.jpg" alt="A picture of myself">
-        <h2>Ilija Angelov</h2>
-    </div>
+<div id="about" class="about">
     <div class="more-about-myself">
-        I'm a web developer with little more than 2 years of working experience with business integration at StadiaConnect.
-            Proficiency with html5, css3, javascript, jquery, php, mysql, wordpress.
-            I strive to improve my full-stack skills with ES6, Laravel, OOP... 
+        <h1>About me</h1>
+        <p style="font-size: 1.6em;">Hello. My name is <span style="font-weight: bold">Ilija Angelov</span>. </br> I'm a Web Developer with working experience in BackEnd (PHP, MySQL) and FrontEnd (HTML, CSS, Javascript, Bootstrap) techonologies.</p>
     </div>
+    <div class="myself">
+        <img src="/assets/me.jpg" alt="My picture">
+    </div>
+
 </div>
 <div id="projects" class="projects">
 <h1 style="text-align: center;">Projects</h1>
     <div class="projects-container">
-        <div class="project">
-            <div class="project-image"><img src="/assets/Basic Tetris.png" style="width: 100%; height: 100%;"></div>
+        <div class="project" style="margin-right: 2vh;">
+            <h3 style="text-align: center">CMS System</h3>
+            <img class="project-image" src="http://ilija.atrajkov.com/cms.png" alt="Basic CMS" style="width: 100%; height: 100%;">
+            <p style="text-align: center">CMS made with PHP/SQL for the back-end and some Javascript,CSS,Bootstrap, HTML for front-end.</p>
+            <div class="project-links">
+                <a href="https://github.com/IlijaAngelov/cms" rel="noreferrer">Github</a>
+                <a href="https://codepen.io/ItoAngel/full/jOWpPyx" target="_blank" rel="noreferrer">Live</a>
+            </div>
+        </div>
+        <div class="project" style="margin-right: 2vh;">
+            <h3 style="text-align: center">Memory Game</h3>
+            <img class="project-image" src="http://ilija.atrajkov.com/Memory Game.png" alt="Basic CMS" style="width: 100%; height: 100%;">
+            <p style="text-align: center">Game made with Javascript</p>
             <div class="project-links">
                 <a href="https://github.com/IlijaAngelov/memory_game" rel="noreferrer">Github</a>
                 <a href="https://codepen.io/ItoAngel/full/jOWpPyx" target="_blank" rel="noreferrer">Live</a>
             </div>
         </div>
         <div class="project">
-            <div class="project-image"><img src="/assets/Memory Game.png" style="width: 100%; height: 100%;"></div>
+            <h3 style="text-align: center">Basic Tetris</h3>
+            <img class="project-image" src="http://ilija.atrajkov.com/Basic Tetris.png" alt="Basic CMS" style="width: 100%; height: 100%;">
+            <p style="text-align: center">Tetris made with Javascript</p>
             <div class="project-links">
-                <a href="https://github.com/IlijaAngelov/basic-tetris" target="_blank" rel="noreferrer">Github</a>
+                <a href="https://github.com/IlijaAngelov/basic-tetris" rel="noreferrer">Github</a>
                 <a href="https://codepen.io/ItoAngel/full/GRoMggB" target="_blank" rel="noreferrer">Live</a>
             </div>
         </div>
@@ -104,12 +121,7 @@
     </form>
 </div>
 <footer class="footer" style="text-align: center">
-    <div style="margin-bottom: 5px; ">Copyright &copy; 2020</div>
-    <div class="links">
-    <a href="https://www.linkedin.com/in/ilija-angelov-22472413b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in space-it" style="color:white" ></i></a>  
-    <a href="https://github.com/IlijaAngelov" target="_blank" rel="noreferrer"><i class="fab fa-github space-it" style="color:white"></i></a>
-    <a href="http://ilija.atrajkov.com/resume.pdf" target="_blank" rel="noreferrer"><i class="far fa-file-alt space-it" style="color:white"></i></a>
-    </div>
+    <div style="margin-bottom: 5px; ">Copyright &copy; 2021</div>
 </footer>
 <script type="text/javascript" src="scripts.js"></script>
 </body>
