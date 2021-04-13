@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<!--    <link rel="manifest" href="/site.webmanifest">-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="menu.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"> 
@@ -36,7 +40,7 @@
 <header>
     <div id="nav" class="menu-area ul">
         <a class="li" href="http://ilija.atrajkov.com/index.php">
-        <img src="/assets/ai-logo.png" alt="AI_logo" height="25vh" width="25vh">
+        <img src="assets/favicon-32x32.png" alt="AI_logo" height="25vh" width="25vh">
         </a>
         <a class="li" href="#about" name="about">About</a>
         <a class="li" href="#projects" name="projects">Projects</a>
@@ -61,40 +65,46 @@
 <div id="about" class="about">
     <div class="more-about-myself">
         <h1>About me</h1>
-        <p style="font-size: 1.6em;">Hello. My name is <span style="font-weight: bold">Ilija Angelov</span>. </br> I'm a Web Developer with working experience in BackEnd (PHP, MySQL) and FrontEnd (HTML, CSS, Javascript, Bootstrap) techonologies.</p>
+        <p style="font-size: 1.6em;">Hello. My name is <span style="font-weight: bold">Ilija Angelov</span>. </br> I'm a Web Developer with working experience in BackEnd (PHP, MySQL) and FrontEnd (HTML, CSS, Javascript, Bootstrap) technologies.</p>
     </div>
     <div class="myself">
-        <img src="/assets/me.jpg" alt="My picture">
+        <img src="assets/me.jpg" alt="My picture">
     </div>
 
 </div>
 <div id="projects" class="projects">
 <h1 style="text-align: center;">Projects</h1>
     <div class="projects-container">
-        <div class="project" style="margin-right: 2vh;">
-            <h3 style="text-align: center">CMS System</h3>
-            <img class="project-image" src="http://ilija.atrajkov.com/cms.png" alt="Basic CMS" style="width: 100%; height: 100%;">
-            <p style="text-align: center">CMS made with PHP/SQL for the back-end and some Javascript,CSS,Bootstrap, HTML for front-end.</p>
+        <div class="project">
+            <div id="project1" class="project">
+                <div>
+                    <img id="cmsProject" class="project-image" src="assets/cms.png" alt="Basic CMS">
+                </div>
+            </div>
             <div class="project-links">
-                <a href="https://github.com/IlijaAngelov/cms" rel="noreferrer">Github</a>
-                <a href="https://codepen.io/ItoAngel/full/jOWpPyx" target="_blank" rel="noreferrer">Live</a>
+                <a href="https://github.com/IlijaAngelov/cms" target="_blank" rel="noreferrer">Github</a>
+                <a href="http://blog.ilija.atrajkov.com/" target="_blank" rel="noreferrer">Live</a>
             </div>
         </div>
-        <div class="project" style="margin-right: 2vh;">
-            <h3 style="text-align: center">Memory Game</h3>
-            <img class="project-image" src="http://ilija.atrajkov.com/Memory Game.png" alt="Basic CMS" style="width: 100%; height: 100%;">
-            <p style="text-align: center">Game made with Javascript</p>
+        <div class="project">
+            <div id="project2" class="project">
+                <div>
+                    <img id="memoryGame" class="project-image" src="assets/Memory Game.png" alt="Basic CMS">
+                </div>
+            </div>
             <div class="project-links">
-                <a href="https://github.com/IlijaAngelov/memory_game" rel="noreferrer">Github</a>
+                <a href="https://github.com/IlijaAngelov/memory_game" target="_blank" rel="noreferrer">Github</a>
                 <a href="https://codepen.io/ItoAngel/full/jOWpPyx" target="_blank" rel="noreferrer">Live</a>
             </div>
         </div>
         <div class="project">
-            <h3 style="text-align: center">Basic Tetris</h3>
-            <img class="project-image" src="http://ilija.atrajkov.com/Basic Tetris.png" alt="Basic CMS" style="width: 100%; height: 100%;">
-            <p style="text-align: center">Tetris made with Javascript</p>
+            <div id="project3" class="project">
+                <div>
+                    <img id="basic_tetris" class="project-image" src="assets/Basic Tetris.png" alt="Basic CMS">
+                </div>
+            </div>
             <div class="project-links">
-                <a href="https://github.com/IlijaAngelov/basic-tetris" rel="noreferrer">Github</a>
+                <a href="https://github.com/IlijaAngelov/basic-tetris" target="_blank" rel="noreferrer">Github</a>
                 <a href="https://codepen.io/ItoAngel/full/GRoMggB" target="_blank" rel="noreferrer">Live</a>
             </div>
         </div>
