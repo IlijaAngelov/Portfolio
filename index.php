@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 <body>
+    <p>TEST</p>
 <?php include ('sendMail.php'); ?>
 <div class="menu-wrap">
     <input type="checkbox" class="toggler">
