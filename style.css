@@ -123,7 +123,7 @@ html, body {
     flex: 1 1 33%;
     flex-direction: column;
     box-shadow: 5px 5px 20px grey;
-    margin-right: 2vh;
+    border: 2px solid lightblue;
     height: 200px;
 }
 .project-image { 
