@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<!--    <link rel="manifest" href="/site.webmanifest">-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="menu.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"> 
@@ -39,8 +38,8 @@
 </div>
 <header>
     <div id="nav" class="menu-area ul">
-        <a class="li" href="http://ilija.atrajkov.com/index.php">
-        <img src="assets/favicon-32x32.png" alt="AI_logo" height="25vh" width="25vh">
+        <a class="li" href="#personal">
+        <img src="assets/favicon-32x32.png" alt="AI_logo">
         </a>
         <a class="li" href="#about" name="about">About</a>
         <a class="li" href="#projects" name="projects">Projects</a>
@@ -48,32 +47,32 @@
     </div>
 </header>
 <div id="personal" class="personal">
-    <div class="flex-container">
-            <div class="about-info">
-                <h1 class="uppercase">ilija angelov</h1>
-                <div class="line"></div>
-                <h2 class="uppercase">web developer</h2>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/ilija-angelov-22472413b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in space-it" style="color:white" ></i></a>
-                    <a href="https://github.com/IlijaAngelov" target="_blank" rel="noreferrer"><i class="fab fa-github space-it" style="color:white"></i></a>
-                    <a href="http://ilija.atrajkov.com/resume.pdf" target="_blank" rel="noreferrer"><i class="far fa-file-alt space-it" style="color:white"></i></a>
-                </div>
+    <div>
+        <div class="about-info">
+            <h1>Hi, I'm Ilija Angelov</h1>
+            <div class="line"></div>
+            <h2 class="uppercase">web developer</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/ilija-angelov-22472413b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in" ></i></a>
+                <a href="https://github.com/IlijaAngelov" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                <a href="http://ilija.atrajkov.com/resume.pdf" target="_blank" rel="noreferrer"><i class="far fa-file-alt"></i></a>
             </div>
-
+        </div>
     </div>
 </div>
+
 <div id="about" class="about">
     <div class="more-about-myself">
-        <h1>About me</h1>
-        <p style="font-size: 1.6em;">Hello. My name is <span style="font-weight: bold">Ilija Angelov</span>. </br> I'm a Web Developer with working experience in BackEnd (PHP, MySQL) and FrontEnd (HTML, CSS, Javascript, Bootstrap) technologies.</p>
+        <h3>Web Developer based in Strumica, Macedonia</h3>
+        <p> Working with WAMP stack on my current job. I strive to improve and master my programming skills with reading books and doing side projects.</p>
+        <p>I also have a strong interest in the TALL stack, especially experiencing Laravel and Tailwind.</p>
     </div>
-    <div class="myself">
+    <div>
         <img src="assets/me.jpg" alt="My picture">
     </div>
-
 </div>
+
 <div id="projects" class="projects">
-<h1 style="text-align: center;">Projects</h1>
     <div class="projects-container">
         <div class="project">
             <div id="project1" class="project">
@@ -89,7 +88,7 @@
         <div class="project">
             <div id="project2" class="project">
                 <div>
-                    <img id="memoryGame" class="project-image" src="assets/Memory Game.png" alt="Basic CMS">
+                    <img id="memoryGame" class="project-image" src="assets/Memory Game.png" alt="Basic Memory Game">
                 </div>
             </div>
             <div class="project-links">
@@ -100,7 +99,7 @@
         <div class="project">
             <div id="project3" class="project">
                 <div>
-                    <img id="basic_tetris" class="project-image" src="assets/Basic Tetris.png" alt="Basic CMS">
+                    <img id="basic_tetris" class="project-image" src="assets/Basic Tetris.png" alt="Basic Tetris">
                 </div>
             </div>
             <div class="project-links">
@@ -112,8 +111,6 @@
 </div>
 
 <div id="contact-section" class="contact-section">
-<h1 style="text-align: center;" >Contact</h1>
-
     <form id="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" >
         <div class="contact-container">    
             <div class="submit-info">
@@ -130,8 +127,9 @@
         </div> 
     </form>
 </div>
-<footer class="footer" style="text-align: center">
-    <div style="margin-bottom: 5px; ">Copyright &copy; 2021</div>
+
+<footer>
+    <div>Copyright &copy; <?php echo date('Y', time()); ?></div>
 </footer>
 <script type="text/javascript" src="scripts.js"></script>
 </body>

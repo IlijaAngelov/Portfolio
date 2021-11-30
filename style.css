@@ -14,7 +14,7 @@ html, body {
     position: fixed; /* Fixed position - sit on top of the page */
     top: 0;
     width: 100%; /* Full width */
-    height: 13vh;
+    height: 12vh;
     align-items: center;
     transition: 0.3s; /* Add a transition effect (when scrolling - and font size is decreased) */
     z-index: 1;
@@ -55,11 +55,7 @@ html, body {
     overflow: hidden;
     color: white;
 }
-.flex-container {
-    display: flex;
-    flex: 1 1 auto;
-    height: 80vh;
-}
+
 .about-info {
     display: flex;
     align-content: center;
@@ -80,16 +76,17 @@ html, body {
 }
 .about {
     display: flex;
-    opacity: 0.8;
     padding: 5vh 0;
     margin: auto;
     width: 70vw;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
 }
 .about img {
-    border-radius: 50%;
-    border: 2px solid grey;
-    height: 150px;
-    width: 150px; 
+    height: 250px;
+    width: 250px;
+    object-fit: cover; 
 }
 .myself {
     display: flex;
@@ -99,6 +96,9 @@ html, body {
 .more-about-myself {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    font-size: larger;
 }
 
 
@@ -111,6 +111,7 @@ html, body {
     /* padding-top: 15vh;  */
     width: 70%;
     margin: auto;
+    min-height: 60vh;
     padding: 5vh 0;
 }
 .projects-container {
@@ -154,12 +155,11 @@ html, body {
 
 /*              CONTACT  SECTION */
 .contact-section {
-    /* padding-top: 15vh;  */
     align-content: center;
     justify-content: center;
     width: 70%;
     margin: auto;
-    padding: 5vh 0 10vh 0;
+    min-height: 50vh;
 }
 .contact-container {
     display: flex;
@@ -225,25 +225,27 @@ input:focus {
 }
 
 
-.footer {
+footer {
     display: flex;
     flex-direction: column;
     background: rgba(38, 40, 45, 0.9);
     padding: 10px;
+    text-align: center;
+}
+footer div {
+    margin-bottom: 10px;
 }
 .links {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     color: #fff;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 3.5em;
-    width: 30vw;
-    padding-top: 3vh !important;
+    width: 100%;
+    padding-top: 3vh;
 }
-.space-it {
-    height: 30px;
-    width: 30px;
+.links a {
+    color: white;
 }
 
 .alert-success {
@@ -260,6 +262,10 @@ input:focus {
 
 .menu-wrap {
     visibility: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
 }
 
 
