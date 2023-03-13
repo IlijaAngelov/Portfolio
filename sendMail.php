@@ -20,24 +20,21 @@ if(isset($_POST['submit'])){
         if(filter_var($email, FILTER_VALIDATE_EMAIL) === false ) {
                 echo '<script type="text/javascript">toastr.danger(\'Please use valid email!\')</script>';
         } else {
-            $mail = new PHPMailer();
-            // $mail->SMTPDebug = 3;
+            $mail = new PHPMailer(true);
+	     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
-            $mail->Host = "smtp.gmail.com";
+            $mail->Host = "smtp.office365.com";
             $mail->SMTPAuth = true;
-            $mail->Username = "ilija.angelov@gmail.com";
-            $mail->Password = "*******";
-            // If SMTP requires TLS encryption then set it
-            $mail->SMTPSecure = "tls";
-            // Set TCP port to connect to
+            $mail->Username = "*********";
+            $mail->Password = "******";
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            //from email address and name
-            $mail->SetFrom($email);
-            //To address and name
-            $mail->addAddress("scatmankiller@hotmail.com", "Recepient Name");
-            //Address to which recepient will reply
-            $mail->addReplyTo($email, "Reply to this email!");
+	    $mail->setFrom('********', "$name - Submitted the Form");
+	    $mail->addAddress($email, $name);
+	    $mail->addReplyTo('********', $name);
+	    //$mail->addCC('cc@example.com');
+	    //$mail->addBCC('bcc@example.com');
 
             //Send HTML or Plain text email
             $mail->isHTML(true);
@@ -47,10 +44,10 @@ if(isset($_POST['submit'])){
 
             try {
                 $mail->send();
-                if($date->format(D) === 'Sat' || $date->format(D) === 'Sun') {
+                if($date->format("D") === 'Sat' || $date->format("D") === 'Sun') {
                     echo '<script type="text/javascript">toastr.success(\'Email sent successfully! It is weekend! I will get back to you as soon as possible. \')</script>';
                 } else {
-                    if($date->format(H) >= 21 || $date->format(H) <= 9){
+                    if($date->format("H") >= 21 || $date->format("H") <= 9){
                         echo '<script type="text/javascript">toastr.success(\'Email sent successfully! I might be sleeping! I will get back to you in few hours.\')</script>';
                     } else {
                         echo '<script type="text/javascript">toastr.success(\'Email sent successfully! I will get back at you shortly!\')</script>';
@@ -60,7 +57,8 @@ if(isset($_POST['submit'])){
             } catch(Exception $e) {
                 echo "Mailer Error:" . $mail->ErrorInfo;
                 echo '<script type="text/javascript">toastr.danger(\'There was a problem sending the email!\')</script>';
-            }            
+            } 
+           
         }
     } else {
         echo '<script type="text/javascript">toastr.info(\'Please fill all the required fields!\')</script>';
