@@ -42,7 +42,6 @@ html, body {
     margin-left: 5vh;
 }
 
-
 /*      Main page        */
 .personal {
     display: flex;
@@ -55,7 +54,6 @@ html, body {
     overflow: hidden;
     color: white;
 }
-
 .about-info {
     display: flex;
     align-content: center;
@@ -69,17 +67,17 @@ html, body {
     margin: auto;
     margin-bottom: 3.5vh;
 }
-
 .uppercase {
     text-transform: uppercase;
     line-height: 2;
 }
 .about {
     display: flex;
-    padding: 5vh 0;
+    flex-direction: row;
+    padding: 13vh 0 10vh 0;
     margin: auto;
-    width: 70vw;
-    min-height: 60vh;
+    /* width: 70vw; */
+    /* min-height: 60vh; */
     align-items: center;
     justify-content: center;
 }
@@ -87,6 +85,7 @@ html, body {
     height: 250px;
     width: 250px;
     object-fit: cover; 
+    border-radius: 50%;
 }
 .myself {
     display: flex;
@@ -101,7 +100,13 @@ html, body {
     font-size: larger;
 }
 
-
+.contact-button {
+    background-color: #2E76CF; 
+    text-align: center; 
+    border-radius: 30px; 
+    padding: 2vh 3vh; 
+    width: 50%;
+}
 
 /*            PROJECTS */
 .projects {
@@ -112,7 +117,7 @@ html, body {
     width: 70%;
     margin: auto;
     min-height: 60vh;
-    padding: 5vh 0;
+    /* padding: 5vh 0; */
 }
 .projects-container {
     display: flex;
@@ -226,15 +231,11 @@ input:focus {
 
 
 footer {
-    display: flex;
-    flex-direction: column;
-    background: rgba(38, 40, 45, 0.9);
-    padding: 10px;
+    padding: 2vh;
     text-align: center;
+    background-color:rgba(38, 40, 45, 0.9);
 }
-footer div {
-    margin-bottom: 10px;
-}
+
 .links {
     display: flex;
     justify-content: space-around;
@@ -244,6 +245,7 @@ footer div {
     width: 100%;
     padding-top: 3vh;
 }
+
 .links a {
     color: white;
 }
@@ -305,11 +307,6 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
     }    
 
-    .contact-section {
-        /* width: 90%; */
-        /* height: 400px; */
-        /* padding-top: 8vh; */
-    }
     .contact-container {
         display: flex;
         flex-direction: column;
@@ -340,6 +337,19 @@ h1, h2, h3, h4, h5, h6 {
         overflow-x: hidden !important;
     }
 
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .more-about-myself {
+        text-align: center;
+    }
+
+    .projects {
+        padding-top: 13vh;
+    }
+
     .projects-container {
         display: flex;
         flex-direction: column;
@@ -347,5 +357,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     .links{
         font-size: 2.5em;
+    }
+
+    .contact-section {
+        padding-top: 13vh;
+    }
+
+    .contact-button {
+        width: 100%;
     }
 }

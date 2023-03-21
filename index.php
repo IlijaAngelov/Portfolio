@@ -49,7 +49,7 @@
 <div id="personal" class="personal">
     <div>
         <div class="about-info">
-            <h1>Hi, I'm Ilija Angelov</h1>
+            <h1>Ilija Angelov</h1>
             <div class="line"></div>
             <h2 class="uppercase">web developer</h2>
             <div class="links">
@@ -63,9 +63,10 @@
 
 <div id="about" class="about">
     <div class="more-about-myself">
-        <h3>Web Developer based in Strumica, Macedonia</h3>
-        <p> Working with WAMP stack on my current job. I strive to improve and master my programming skills with reading books and doing side projects.</p>
-        <p>I also have a strong interest in the TALL stack, especially experiencing Laravel and Tailwind.</p>
+        <h3>Looking for new opportunities!</h3>
+        <p>I'm currently experimenting with Laravel, creating interesting side projects and having an eye for a frontend framework like Vue in the near future.</p>
+        <p>If you have an interesting project for me or you wanna get in contact please use the form</p>
+            <a class="li contact-button" href="#contact-section" name="contact">Contact</a>
     </div>
     <div>
         <img src="assets/me.jpg" alt="My picture">
