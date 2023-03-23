@@ -55,7 +55,7 @@
             <div class="links">
                 <a href="https://www.linkedin.com/in/ilija-angelov-22472413b/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in" ></i></a>
                 <a href="https://github.com/IlijaAngelov" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                <a href="http://ilija.atrajkov.com/resume.pdf" target="_blank" rel="noreferrer"><i class="far fa-file-alt"></i></a>
+                <a href="https://docs.google.com/document/d/1GwTN9Bcx4uq-DmyhtMzxKPfHSoNkIydV/edit#heading=h.3znysh7" target="_blank" rel="noreferrer"><i class="far fa-file-alt"></i></a>
             </div>
         </div>
     </div>
